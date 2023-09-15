@@ -5,7 +5,7 @@ import MainPage from './components/MainPage/MainPage';
 
 function App() {
   return (
-    <div className='App' style={{overflowY: 'scroll'}}>
+    <div className='App'>
       <NavigationBar/>
       <MainPage/>
     </div>
