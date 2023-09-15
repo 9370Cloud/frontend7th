@@ -18,7 +18,7 @@ function MainPage() {
         <p className="slogan" >
           dataMindHub
         </p>
-        <p className="slogan2">Unlocking the Power of Data, One Thought at a Time.</p>
+        <p className="slogan2">AI시대가 도래하면 프론트엔드보다 백엔드가 먼저 망할듯</p>
       </div>
       <div style={{ textAlign: "center", marginTop: "30px" }}>
         <button className="Button">Get Started</button>
