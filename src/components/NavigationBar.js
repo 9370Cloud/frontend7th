@@ -2,8 +2,12 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./NavigationBar.css";
+import { useState } from "react";
 
 function NavigationBar() {
+
+  const [open, setOpen] = useState(false);
+
   return (
     <Navbar expand="lg" className="bg-white">
       <Container>
@@ -11,7 +15,13 @@ function NavigationBar() {
           dataMindHub
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="NavHamburgerBtn" >
-          12312
+          <div className={`icon nav-icon-5 ${open? 'open' : ''}`} onClick={()=>{
+              setOpen(!open)
+          }}>
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
