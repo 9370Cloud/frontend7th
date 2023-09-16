@@ -7,10 +7,10 @@
 /* 모바일 디바이스일 때 */
 @media only screen and (max-width: 600px) {
   .slogan{
-      font-size: 50px;    
+      font-size: 40px;    
     }
   .slogan2{
-    font-size: 14px; 
+    font-size: 12px; 
   }
   .MainPageDiv{
     padding:5%;
@@ -68,6 +68,9 @@
     .custom-shape-divider-top-1694790510 svg {
         width: calc(100% + 1.3px);
         height: 28px;
+    }
+    .divider1{
+      display:none;
     }
 }
   
