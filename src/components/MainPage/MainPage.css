@@ -4,6 +4,17 @@
   
 }
 
+.slogan{
+
+  text-align: center;
+  font-weight: bold;
+}
+.slogan2{
+
+  text-align: center;
+  font-weight: bold;
+}
+
 /* 모바일 디바이스일 때 */
 @media only screen and (max-width: 600px) {
   .slogan{
@@ -74,4 +85,16 @@
     }
 }
   
- 
+.Main2Title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+@media (max-width: 767px) {
+  .Main2Title{
+   
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+}

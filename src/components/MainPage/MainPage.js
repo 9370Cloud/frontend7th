@@ -1,13 +1,13 @@
 import "./MainPage.css";
+import CodeUi from "./CodeUi";
 
 function MainPage() {
   const mottoContainer = {
-    textAlign: "center",
+    // 그라데이션 예제인데 지우기 아까워서 걍 냅둠.
     // background: 'linear-gradient(135deg, #0d0c22, #7186FF)',
     // WebkitBackgroundClip: 'text',
     // backgroundClip: 'text',
     // color: 'transparent',
-    fontWeight: "bold",
   };
 
   return (
@@ -40,7 +40,12 @@ function MainPage() {
       </div>
 
       <div className="MainPageDiv Main2" style={{backgroundColor:'#F8F7F3'}}>
-        오늘은 여기까지 했습니다 너무 힘들어잉
+        <p className="Main2Title">
+            코딩노예들
+          </p>
+        <div className="codeUi-section">
+          <CodeUi/><CodeUi/><CodeUi/><CodeUi/><CodeUi/>
+        </div>
       </div>
 
     </div>

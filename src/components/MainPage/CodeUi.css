@@ -7,19 +7,55 @@ code, .card .line-numbers {
 }
 
 .card {
-  width: 30em;
-  height: 14em;
+  height: 12em;
+  width: 20em;
 }
 .card-back {
-  position: absolute;
-  width: 30em;
-  height: 15em;
+  height: 12em;
+  width: 20em;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   background: #0D0C22;
+}
+
+.codeUi-section{
+  display: flex;
+  flex-direction: column; /* 세로 방향으로 정렬 */
+  justify-content: center; /* 주 축을 따라 세로 방향 가운데 정렬 */
+  align-items: center; /* 교차 축을 따라 가로 방향 가운데 정렬 */
+}
+
+@media only screen and (min-width: 800px) {
+  .card {
+    width: 30em; 
+    height: 15em;
+  }
+  .card-back {
+    width: 30em; 
+    height: 15em;
+  }
+  .codeUi-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* 주 축을 따라 가운데 정렬 */
+    align-items: center; /* 교차 축을 따라 가운데 정렬 */
+    flex-wrap: wrap; 
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  
+  .codeUi-section{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* 주 축을 따라 가운데 정렬 */
+    align-items: center; /* 교차 축을 따라 가운데 정렬 */
+    /* flex-wrap: wrap;  */
+  }
 }
 
 .card .line-numbers {
