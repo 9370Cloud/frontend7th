@@ -20,3 +20,14 @@
   background-color: #f0f0f0; /* hover 상태 배경색 */
   box-shadow: none; /* 그림자 제거 */
 }
+
+.NavHamburgerBtn {
+  width: 30px;
+  height: 30px;
+  border-radius:10px;
+  border-color:#0D0C22;
+}
+
+.navbar-toggler-icon{
+  display: none;
+}

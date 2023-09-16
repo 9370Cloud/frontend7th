@@ -10,7 +10,9 @@ function NavigationBar() {
         <Navbar.Brand href="#home">
           dataMindHub
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="NavHamburgerBtn" >
+          12312
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home" style={{ color: "#0D0C22" }}>
