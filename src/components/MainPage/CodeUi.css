@@ -28,7 +28,21 @@ code, .card .line-numbers {
   align-items: center; /* 교차 축을 따라 가로 방향 가운데 정렬 */
 }
 
-@media only screen and (min-width: 800px) {
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    font-size: 16px;
+    height: 15em;
+    width: 30em;
+  }
+  .card-back {
+    height: 15em;
+    width: 30em;
+  }
+}
+
+@media only screen and (min-width: 900px) {
   .card {
     width: 30em; 
     height: 15em;
