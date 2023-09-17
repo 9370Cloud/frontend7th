@@ -1,6 +1,7 @@
 import "./MainPage.css";
 import CodeUi from "./CodeUi";
-import Accordion from "react-bootstrap/Accordion";
+
+import Carousel from "react-bootstrap/Carousel";
 
 function MainPage() {
   const mottoContainer = {
@@ -10,9 +11,6 @@ function MainPage() {
     // backgroundClip: 'text',
     // color: 'transparent',
   };
-
-
-  
 
   return (
     <div>
@@ -63,65 +61,21 @@ function MainPage() {
 
       <div className="mobile-accordion">
         <p className="Mobile-Main2Title">코딩노예들</p>
-       
-        <div className="accordion">
-      <div className="accordion-item">
-        <input
-          id="accordion-1"
-          name="accordion"
-          type="radio"
-          className="accordion-input"
-          checked
-        />
-        <label for="accordion-1" class="heading">
-          <div className="icon"></div>
-          <div className="title">노예 1</div>
-        </label>
 
-        <div className="content AccordionBody">
-          <CodeUi/>
-        </div>
+        <Carousel>
+          <Carousel.Item className="carousel">
+            <div className="carosel-image">
+              <CodeUi />
+            </div>
+          </Carousel.Item>
+          <Carousel.Item><div className="carosel-image">
+              <CodeUi />
+            </div></Carousel.Item>
+          <Carousel.Item><div className="carosel-image">
+              <CodeUi />
+            </div></Carousel.Item>
+        </Carousel>
       </div>
-
-      <div className="accordion-item">
-        <input
-          id="accordion-2"
-          name="accordion"
-          type="radio"
-          className="accordion-input"
-        />
-        <label for="accordion-2" class="heading">
-          <div className="icon"></div>
-          <div className="title">노예 2</div>
-        </label>
-
-        <div className="content AccordionBody">
-        <CodeUi/>
-        </div>
-      </div>
-
-      <div className="accordion-item">
-        <input
-          id="accordion-3"
-          name="accordion"
-          type="radio"
-          className="accordion-input"
-        />
-        <label for="accordion-3" class="heading">
-          <div className="icon"></div>
-          <div className="title">노예 3</div>
-        </label>
-
-        <div className="content AccordionBody">
-        <CodeUi/>
-        </div>
-      </div>
-    </div>
-       
-      </div>
-
-
-    
     </div>
   );
 }
