@@ -2,6 +2,14 @@
     font-weight: 501;
   }
   
+.Button{
+  font-weight: 500;
+}
+
+.nav-brand{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 .LogInButton {
   background-color: #Ffffff ; /* 기본 배경색 */
   color: #2E2E3A;
@@ -11,7 +19,7 @@
   border: none; /* 테두리 제거 */
   outline: none; /* 포커스 효과 제거 */
   margin-right: 5px;
-  font-weight: 501;
+  font-weight: 500;
 }
 
 .LogInButton:hover {

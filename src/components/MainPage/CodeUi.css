@@ -32,13 +32,13 @@ code, .card .line-numbers {
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {
   .card {
-    font-size: 16px;
+    font-size: 20px;
     height: 15em;
-    width: 30em;
+    width: 27em;
   }
   .card-back {
     height: 15em;
-    width: 30em;
+    width: 27em;
   }
 }
 
@@ -57,6 +57,7 @@ code, .card .line-numbers {
     justify-content: center; /* 주 축을 따라 가운데 정렬 */
     align-items: center; /* 교차 축을 따라 가운데 정렬 */
     flex-wrap: wrap; 
+    gap: 10px; /* 요소들 사이의 간격을 10px로 설정 */
   }
 }
 

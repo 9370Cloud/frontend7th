@@ -1,6 +1,6 @@
 import "./MainPage.css";
 import CodeUi from "./CodeUi";
-import Accordion from 'react-bootstrap/Accordion';
+import Accordion from "react-bootstrap/Accordion";
 
 function MainPage() {
   const mottoContainer = {
@@ -11,9 +11,11 @@ function MainPage() {
     // color: 'transparent',
   };
 
+
+  
+
   return (
     <div>
-
       <div className="MainPageDiv">
         <div style={mottoContainer}>
           <p className="slogan">dataMindHub</p>
@@ -34,43 +36,92 @@ function MainPage() {
 
       <div className="divider1">
         <div className="custom-shape-divider-top-1694790510">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" className="shape-fill"></path>
-            </svg>
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
+              className="shape-fill"
+            ></path>
+          </svg>
         </div>
       </div>
 
-      <div className="MainPageDiv Main2" style={{backgroundColor:'#F8F7F3'}}>
-        <p className="Main2Title">
-            코딩노예들
-          </p>
+      <div className="MainPageDiv Main2" style={{ backgroundColor: "#F8F7F3" }}>
+        <p className="Main2Title">코딩노예들</p>
         <div className="codeUi-section">
-          <CodeUi/><CodeUi/><CodeUi/><CodeUi/><CodeUi/>
+          <CodeUi />
+          <CodeUi />
+          <CodeUi />
+          <CodeUi />
+          <CodeUi />
         </div>
       </div>
 
+      <div className="mobile-accordion">
+        <p className="Mobile-Main2Title">코딩노예들</p>
+       
+        <div className="accordion">
+      <div className="accordion-item">
+        <input
+          id="accordion-1"
+          name="accordion"
+          type="radio"
+          className="accordion-input"
+          checked
+        />
+        <label for="accordion-1" class="heading">
+          <div className="icon"></div>
+          <div className="title">노예 1</div>
+        </label>
 
-      <Accordion defaultActiveKey={['0']} alwaysOpen className="mobile-accordion">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
+        <div className="content AccordionBody">
           <CodeUi/>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
-        <Accordion.Body>
-         <CodeUi/>
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
+        </div>
+      </div>
+
+      <div className="accordion-item">
+        <input
+          id="accordion-2"
+          name="accordion"
+          type="radio"
+          className="accordion-input"
+        />
+        <label for="accordion-2" class="heading">
+          <div className="icon"></div>
+          <div className="title">노예 2</div>
+        </label>
+
+        <div className="content AccordionBody">
+        <CodeUi/>
+        </div>
+      </div>
+
+      <div className="accordion-item">
+        <input
+          id="accordion-3"
+          name="accordion"
+          type="radio"
+          className="accordion-input"
+        />
+        <label for="accordion-3" class="heading">
+          <div className="icon"></div>
+          <div className="title">노예 3</div>
+        </label>
+
+        <div className="content AccordionBody">
+        <CodeUi/>
+        </div>
+      </div>
+    </div>
+       
+      </div>
 
 
-
-
-
-
-
+    
     </div>
   );
 }

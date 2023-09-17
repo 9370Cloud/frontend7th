@@ -11,7 +11,7 @@ function NavigationBar() {
   return (
     <Navbar expand="lg" className="bg-white">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#home" className="nav-brand">
           dataMindHub
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="NavHamburgerBtn" >
