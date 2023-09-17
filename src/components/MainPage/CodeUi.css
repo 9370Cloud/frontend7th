@@ -46,7 +46,14 @@ code, .card .line-numbers {
   .card {
     width: 30em; 
     height: 15em;
+    transition: opacity 0.8s; /* 투명도 변경에 트랜지션 효과 추가 */
+    opacity: 0; /* 초기에는 투명도를 0으로 설정 */
   }
+  
+  .card.visible {
+    opacity: 1; /* 요소가 화면에 보일 때 투명도를 1로 변경 */
+  }
+  
 
   .card-back {
     width: 30em; 

@@ -1,4 +1,7 @@
 import './CodeUi.css'
+import React, { useEffect, useRef, useState } from 'react';
+
+
 
 function CodeUi(){
 
@@ -11,7 +14,37 @@ function CodeUi(){
         }
       };
 
-    return( <div className="card">
+      const [isVisible, setIsVisible] = useState(false);
+      const codeRef = useRef(null);
+
+      useEffect(() => {
+        const handleScroll = () => {
+          const codeElement = codeRef.current;
+    
+          if (codeElement) {
+            const rect = codeElement.getBoundingClientRect();
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    
+            if (rect.top >= 0 && rect.bottom <= windowHeight) {
+              // 요소가 화면에 보이는 범위 내에 있을 때
+              setIsVisible(true);
+            } else {
+              setIsVisible(false);
+            }
+          }
+        };
+    
+        // 스크롤 이벤트 리스너 추가
+        window.addEventListener('scroll', handleScroll);
+    
+        // 컴포넌트 언마운트 시 이벤트 리스너 제거
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
+
+    return( <div className={`card ${isVisible ? 'visible' : ''}`} ref={codeRef}>
     <div className="card-back">
       <div className="line-numbers">
         {Array.from({ length: 9 }, (_, index) => (
