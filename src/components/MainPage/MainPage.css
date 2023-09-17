@@ -98,3 +98,16 @@
     margin-bottom: 50px;
   }
 }
+
+@media (min-width: 768px) {
+  .mobile-accordion {
+    display: none;
+  }
+}
+
+/* 모바일 기기에서는 아코디언 활성화 */
+@media (max-width: 767px) {
+  .MainPageDiv.Main2 {
+    display: none;
+  }
+}
