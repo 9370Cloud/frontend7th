@@ -59,7 +59,7 @@ function MainPage() {
         </div>
       </div>
 
-      <div className="mobile-accordion">
+      <div className="mobile-accordion" >
         <p className="Mobile-Main2Title">코딩노예들</p>
 
         <Carousel>

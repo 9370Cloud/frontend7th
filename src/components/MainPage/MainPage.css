@@ -102,6 +102,10 @@
   }
 }
 
+.mobile-accordion{
+  padding-top: 10%;
+}
+
 @media (min-width: 850px) {
   .mobile-accordion {
     display: none;
