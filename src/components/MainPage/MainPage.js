@@ -32,6 +32,7 @@ function MainPage() {
         </div>
       </div>
 
+      {/* 코딩노예 시작 */}
       <div className="divider1">
         <div className="custom-shape-divider-top-1694790510">
           <svg
@@ -59,7 +60,7 @@ function MainPage() {
         </div>
       </div>
 
-      <div className="mobile-accordion" >
+      <div className="mobile-accordion">
         <p className="Mobile-Main2Title">코딩노예들</p>
 
         <Carousel>
@@ -68,14 +69,40 @@ function MainPage() {
               <CodeUi />
             </div>
           </Carousel.Item>
-          <Carousel.Item><div className="carosel-image">
+          <Carousel.Item>
+            <div className="carosel-image">
               <CodeUi />
-            </div></Carousel.Item>
-          <Carousel.Item><div className="carosel-image">
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="carosel-image">
               <CodeUi />
-            </div></Carousel.Item>
+            </div>
+          </Carousel.Item>
         </Carousel>
       </div>
+
+      <div className="divider2">
+        <div className="custom-shape-divider-top-1694790510">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
+              className="shape-fill"
+              style={{ fill: "#F8F7F3" }}
+            ></path>
+          </svg>
+        </div>
+      </div>
+        {/* 코딩노예 끝 */}
+
+
+        
+
     </div>
   );
 }
