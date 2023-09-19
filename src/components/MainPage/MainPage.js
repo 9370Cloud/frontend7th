@@ -100,7 +100,6 @@ function MainPage() {
         {/* 코딩노예 끝 */}
 
 
-
     </div>
   );
 }

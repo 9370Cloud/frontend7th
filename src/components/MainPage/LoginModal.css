@@ -1,0 +1,21 @@
+.LoginModal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* 주 축을 따라 가운데 정렬 */
+    align-items: center; /* 교차 축을 따라 가운데 정렬 */
+
+    color:#0D0C22;
+    position: absolute;
+}
+
+.ModalBody{
+    border-color: #ffffff;
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
+}
+
+.ModalFooter{
+    padding: 1%;
+}

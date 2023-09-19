@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./NavigationBar.css";
 import { useState } from "react";
+import LoginModal from "./MainPage/Modal";
 
 function NavigationBar() {
 
@@ -32,9 +33,10 @@ function NavigationBar() {
               Post
             </Nav.Link>
           </Nav>
-          <Nav className="ml-auto">
-            <button className="LogInButton" style={{ color: "#0D0C22" }}>Log in</button>
-            <button className="Button" style={{ color: "#ffffff" }}>Sign up</button>
+          <Nav className="text-right">
+            {/* <button className="LogInButton" style={{ color: "#0D0C22" }}>Log in</button>
+            <button className="Button" style={{ color: "#ffffff" }}>Sign up</button> */}
+            <LoginModal/>
           </Nav>
         </Navbar.Collapse>
       </Container>
