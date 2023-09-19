@@ -1,6 +1,5 @@
 import "./MainPage.css";
 import CodeUi from "./CodeUi";
-
 import Carousel from "react-bootstrap/Carousel";
 
 function MainPage() {
@@ -101,7 +100,6 @@ function MainPage() {
         {/* 코딩노예 끝 */}
 
 
-        
 
     </div>
   );
