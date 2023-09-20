@@ -26,9 +26,6 @@ function NavigationBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" style={{ color: "#0D0C22" }}>
-              AboutUs
-            </Nav.Link>
             <Nav.Link href="#link" style={{ color: "#0D0C22" }}>
               Post
             </Nav.Link>

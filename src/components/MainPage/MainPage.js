@@ -17,19 +17,35 @@ function MainPage() {
         <div style={mottoContainer}>
           <p className="slogan">dataMindHub</p>
           <p className="slogan2">
-            AI시대가 도래하면 프론트엔드보다 백엔드가 먼저 망할듯
+            "Our First Project : Website Built with Spaghetti Code"
           </p>
         </div>
-        <div style={{ textAlign: "center", marginTop: "30px" }}>
-          <button className="Button">Get Started</button>
-        </div>
+
         <div style={{ textAlign: "center" }}>
           <img
             src="/Icons.png"
-            style={{ maxWidth: "100%", height: "auto", marginTop: "40px" }}
+            style={{ maxWidth: "100%", height: "auto", marginTop: "7%" }}
           />
         </div>
       </div>
+
+      {/* 포스팅 기능 소개 */}
+      <div className="MainPageDiv" style={{ paddingTop: "0px" }}>
+        <div style={{ textAlign: "center" }}>
+          <p className="Main2Title">노션 페이지 배포하기</p>
+          <div style={{ textAlign: "center", marginBottom:'3%'}}>
+            <p>대충 노션 포스팅 어케 하는지 보여주는 짤</p>
+            <img
+              style={{ height: "300px", width: "300px" }}
+              src="https://images.unsplash.com/photo-1695010800005-50cb50823351?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
+            />
+            <p>대충 남들과 공유할 수 있다는 설명</p>
+            <p>대충 이러쿵 저러쿵 하는 말</p>
+          </div>{" "}
+          <button className="Button">Get Started!</button>
+        </div>
+      </div>
+      {/* 포스팅 기능 소개 끝*/}
 
       {/* 코딩노예 시작 */}
       <div className="divider1">
@@ -97,9 +113,7 @@ function MainPage() {
           </svg>
         </div>
       </div>
-        {/* 코딩노예 끝 */}
-
-
+      {/* 코딩노예 끝 */}
     </div>
   );
 }
